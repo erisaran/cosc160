@@ -1,0 +1,27 @@
+/* Lab 13
+ * compares words to see if they are anagrams
+ */
+
+import java.util.Scanner;
+
+public class AnagramApp{
+  
+  public static void main(String[] args){
+    String strinput = readInput();
+    String s = strinput.toLowerCase();
+    String letters = "";
+    int indexI = 0;
+    char indexC = 'a';
+    while ( indexC <= "z" ){
+      while ( indexI <= s.length() ){
+        if (s.substring(indexI,indexI+1) == indexC){
+          
+    
+  }
+  
+  public static String readInput(){
+    Scanner sc = new Scanner;
+    return sc.nextLine();
+  }//end scanner method
+  
+}//end class

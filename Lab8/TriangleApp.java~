@@ -1,0 +1,18 @@
+/** lab 8
+  * app to measure triangles
+  */
+
+public class TriangleApp{
+  
+  /** creates the triangle and measures the the perimetres */
+  public static void main (String [] args){
+    
+    Triangle t1 = new Triangle(0,3,1,9,3,4,"Triangle A"); //instantiates a triangle with points (0,3),(1,9) and (3,4) called Triangle A
+    
+    
+  }// end main
+  
+  
+  
+}// end class
+    

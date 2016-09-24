@@ -1,0 +1,94 @@
+/** Lab 25
+ * temperature converter gui
+ */
+
+package TempConverter;
+import javax.swing.*;
+import java.awt.event.*;
+import java.awt.*;
+import java.util.*;
+
+public class TempPanel extends JFrame{
+  
+  private JButton [] buttons;
+  private JTextField inValue;
+  private JTextField outValue;
+  private JLabel instruct;
+  private JLabel space = new JLabel("");
+  private double input;
+  
+  /**main method - sets up JFrame*/
+  public static void main(String [] args){
+    JFrame frame = new JFrame("Temperature Converter");
+    frame.setContentPane(new CalculatorPanel());
+    frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
+    frame.pack();
+    frame.setVisible(true);
+  }
+  
+  /** constructs the buttons and labels */
+  public TempPanel() {
+    
+    String[] labels = {"Convert","Switch","Close"};
+    buttons = new JButton[labels.length];
+    
+    ButtonListener  listener = new ButtonListener(); // Create an actionListener 
+    
+    JPanel buttonsPanel = new JPanel();
+    buttonsPanel.setPreferredSize(new Dimension(100,400));
+    buttonsPanel.setLayout(new GridLayout(1,4));
+    
+    JPanel inputPanel = new JPanel();
+    inputPanel.setPreferredSize(new Dimension(200,200));
+    inputPanel.setLayout(new GridLayout(1,4));
+    
+    for (int nextBut = 0; nextBut < buttons.length; nextBut++) { // labels each of the buttons
+      buttons[nextBut] = new JButton(labels[nextBut]);
+      buttonsPanel.add(buttons[nextBut]);
+      buttons[nextBut].addActionListener(listener);
+    }
+    
+    instruct = new JLabel("Enter a temperature in celcius: ");
+    
+    inputPanel.add(instruct);
+    inputPanel.add(inValue);
+    inputPanel.add(space);
+    inputPanel.add(outValue);
+    
+    add(buttonsPanel);
+    add(inputPanel);
+    
+  }//end constructor
+  
+  public double toCelsius(double fahr){
+    int BASE = 32;
+    double CONVERSION_FACTOR = 9.0/ 5.0;
+    double celsius = (fahr - BASE)/CONVERSION_FACTOR;//Step 3 converts into celsius
+    return celsius;
+  }//end method
+    
+  
+  /** represents a listener for button presses */
+  private class ButtonListener implements ActionListener{
+    
+    /** what to do when a button has been pressed */
+    public void actionPerformed(ActionEvent e) {
+      JButton whichButton = (JButton) e.getSource();
+      if ("Convert".equals(whichButton.getText())){
+        input = Integer.parseInt(inValue.getText());
+        double result = toCelsius(input);
+        outValue.setText("" + result);
+      }
+      
+    }//end action method
+  }//end action class
+  
+}//end class
+  
+  
+    
+                         
+                      
+    
+    
+    

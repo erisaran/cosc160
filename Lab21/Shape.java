@@ -1,0 +1,38 @@
+/* lab 21
+ * building shapes
+ */
+
+import javax.swing.*;
+import java.awt.*;
+import java.util.Random;
+
+public class Shape{
+  
+  private int x;
+  private int y;
+  private Color col;
+  private int width;
+  private int height;
+  
+  /** shapestructor to create a random circle */
+  public Shape(){
+    width = randomRange(10, 30);
+    height = width;
+    x = randomRange(0, 400 - width);
+    y = randomRange(0, 400 - height);
+    col = new Color(randomRange(0, 255), randomRange(0, 255), randomRange(0, 255));
+  }// end shapestructor
+  
+  /** Returns random integer between high and low parameters.*/
+  public int randomRange(int low, int high){
+    Random generator = new Random();
+    return generator.nextInt(high-low+1) + low;
+  }//end method
+  
+  /** display method */
+  public void display(Graphics g){
+    g.setColor(col);
+    g.fillOval(x, y, width, height);
+  }//end method
+  
+}//end class

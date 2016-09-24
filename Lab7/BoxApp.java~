@@ -1,0 +1,19 @@
+/** lab 7
+  * box app
+  */
+
+public class BoxApp{
+  
+  public static void main (String [] args){
+    Box b1 = new Box();
+    b1.setHeight(2);
+    b1.setWidth(2);
+    b1.setLength(2);
+    
+    b1.displayString();
+    
+  }// end method
+  
+}//end class
+  
+  

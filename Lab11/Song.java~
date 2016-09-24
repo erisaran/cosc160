@@ -1,0 +1,25 @@
+/** lab 11
+  * song
+  */
+
+
+public class Song{
+  
+  private String songLine;
+  
+  public Song(String line){
+    
+  }
+  
+  
+  public String toString(){
+    
+  }
+  
+  public static void process(){
+    
+  }
+  
+  
+  
+}//end class

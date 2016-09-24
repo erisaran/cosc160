@@ -1,0 +1,25 @@
+/** Lab 18
+  * Traffic light panel class
+  */
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class TrafficLightPanel extends JPanel{
+  
+  private JButton red = new JButton("red");
+  private JButton amber = new JButton("amber");
+  private JButton green = new JButton("green");
+  private JLabel buttonPanelLabel = new JLabel("Button Panel");
+  private JLabel lastPressed = new JLabel("Last Pressed");
+  private JPanel buttonPanel = new JPanel();
+  
+  public TrafficLightPanel(){
+    setPreferredSize(new Dimension(200,300)); // sets panel size
+    setBackground(Color.blue);      // sets background color 
+  }
+  
+}// end class
+  
+  

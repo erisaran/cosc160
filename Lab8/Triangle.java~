@@ -1,0 +1,29 @@
+/** lab 8
+  * triangle measuring program
+  */
+
+public class Triangle{
+  
+  private string triName; //name
+  private int x1c; // x coordinate for the first point
+  private int y1c; //y coordinate for the first point
+  private int x2c;
+  private int y2c;
+  private int x3c;
+  private int y3c;
+  
+  /** triangle constructor */
+  public Triangle(int x1, int y1, int x2, int y2, int x3, int y3, String name){
+    x1c = x1; // sets first x point
+    x2c = x2;
+    x3c = x3;
+    y1c = y1; // sets first y point
+    y2c = y2;
+    y3c = y3;
+    triName = name; //sets name
+  }//end constructor
+  
+  /** default constructor */
+  public Triangle(){}
+  
+}//end class

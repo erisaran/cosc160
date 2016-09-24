@@ -1,0 +1,13 @@
+/* lab 14
+ * table panel class
+ * creates 6 diner objects and draws them
+ */
+
+public class TablePanel extends JPanel{
+  
+  
+  
+  
+  
+  
+}//end class

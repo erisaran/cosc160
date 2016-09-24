@@ -1,0 +1,12 @@
+/** lab 21
+  * Shape panel class
+  */
+
+
+
+public class ShapePanel etends JPanel{
+  
+  private Shape [] shapes = new Shape [20];
+  
+  
+}

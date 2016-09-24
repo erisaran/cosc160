@@ -1,0 +1,17 @@
+/* lab 16
+ * two dimensional arrays
+ */
+
+
+
+public class Fruit{
+  
+  public static void main(String [] args){
+    String [] fruits = new String [3];
+    for (int z : fruits){
+      System.out.println(z);
+    }
+    
+  }//end main
+  
+}// end class

@@ -1,0 +1,39 @@
+/** lab 14
+  * sets the locations for diners
+  */
+
+import javax.swing.*;
+import java.awt.*;
+
+public class Diner{
+  
+  private int x; // x coordinate
+  private int y; // y coordinate
+  private String name; // diner name
+  private Color gender; // color of the diner
+  private String seat; // seat position
+  final private int diametre = 20; // standard circle diamter
+  
+  /** constructor to set the location, name and gender of a single diner */
+  public Diner(int xCoord, int yCoord, String n, Color g, String s){
+    x = xCoord;
+    y = yCoord;
+    name = n;
+    gender = g;
+    seat = s;
+    
+  }//end constructor
+  
+  /** call to draw itself */
+  public void draw(Graphics g){
+    g.setColor(gender);
+    g.fillOval(x, y, diametre, diametre);
+    g.setColor(Color.black);
+    g.setFont(new Font("Courier", Font.PLAIN, 12));
+    g.drawString("Jesus", x - 5, y-15 );
+    g.setFont(new Font("Helvetica", Font.PLAIN, 6));
+    g.drawString(seat, x +5, y);
+  }// end draw method
+  
+}// end class
+    

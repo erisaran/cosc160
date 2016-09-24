@@ -1,0 +1,24 @@
+/* lab 12
+ * program to gets sum of all even integers between 2 and input value
+ */
+
+import java.util.Scanner;
+
+public class Sum{
+  
+  public static void main(String[] args){
+    int max;
+    int evenInt = 2;
+    int sum = 0;
+    Scanner sc = new Scanner(System.in);
+    max = sc;
+    while ( evenInt<max ){
+      sum += evenInt;
+      evenInt += 2}
+    System.out.println( sum );
+  }//end method
+
+  
+}//end class
+      
+    

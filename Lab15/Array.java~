@@ -1,0 +1,10 @@
+/** lab 15
+  * program to show every instance of a target integer in an array
+  */
+
+
+public class Array{
+  
+  private int [] x = new int [];
+  
+}

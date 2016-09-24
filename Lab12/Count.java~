@@ -1,0 +1,35 @@
+/* lab 12
+ * counts vowels and consonants in a sentence
+ */
+
+import java.util.Scanner;
+
+public class Count{
+ 
+  public static void main(String[] args){
+    int countV = 0;
+    int countC = 0;
+    int index = 0;
+    String a = a;
+    String s;
+    s = strinput();
+    while ( index < s.length() ){
+      if ( (s.charAt(index)).compareTo(a) == 0,4,8,14,20 ){
+        countV ++;
+      }else if ( (s.charAt(index).equals(" "){
+      }else{ 
+        countC ++;
+      }
+                  
+                  
+                 
+    
+  }//end main
+  
+  public static String strinput(){
+    Scanner sc = new Scanner(System.in);
+    return sc.nextLine();
+
+
+
+}//end class

@@ -1,0 +1,14 @@
+/* lab 16
+ * 12x12 multiplication table
+ */
+
+
+public class Multi{
+  
+  public static void main(String [] args){
+    
+    Int [] [] multiArray = new int [] [];
+    
+  }// end main
+  
+}// end class

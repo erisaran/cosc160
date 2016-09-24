@@ -1,0 +1,36 @@
+/** lab 10
+  * application to determine whether or not a year is a leap year
+  */
+
+
+public class LeapYear{
+  
+  public static void main (String [] args){
+    int y1 = 2010;
+    int y2 = 2012;
+    int y3 = 1900;
+    int y4 = 2000;
+    int y5 = 1565;
+    
+    leapYear(y1);
+    
+    
+    
+  }//end main
+  
+  public static String leapYear(int year){
+    if (year > 1582){
+      if ((year % 100 == 0) and (year % 400 != 0){
+        return (year + ": is not a leap year")
+      }
+          else if (year % 4 == 0){
+            System.out.println(year + ": is a leap year")
+          }else{
+              return (year + ": is not a leap year")
+            }
+          }
+
+
+
+
+}//end class

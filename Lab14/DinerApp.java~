@@ -1,0 +1,16 @@
+/* lab 14
+ * application class
+ */
+
+import javax.swing.*;
+
+public class DinerApp{
+  
+  public static void main(String[]args){
+    
+    /*creates an instance of DinerApp called dApp */
+    DinerApp dApp = new DinerApp();
+    dApp.setSize(300,300);
+    dApp.setVisible(true);
+  }
+  

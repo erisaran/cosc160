@@ -1,0 +1,47 @@
+/** lab 7
+  */
+
+public class Box{
+  
+  private int height; //height
+  private int width; //width
+  private int length; //length
+  
+  /** sets height to input value */
+  public void setHeight(int h){
+    height = h;
+  }//end method
+  
+  /** sets width to input value */
+  public void setWidth(int w){
+    width = w;
+  }// end method
+  
+  /** sets length to input value */
+  public void setLength(int l){
+    length = l;
+  }// end method
+  
+  /** returns height value */
+  public int getHeight(){
+    return height;
+  }//end method
+  
+  /** returns width value */
+  public int getWidth(){
+    return width;
+  }//end method
+  
+  /** returns length value */
+  public int getLength(){
+    return length;
+  }//end method
+  
+  //** displays all values */
+  public void toString(){
+    int v = height * width * length;
+    int s = ((height * width) + (length * width) + (height * length))*2;
+    System.out.println("Height is: " + height + ", Width is: " + width + ", Length is: " + length +", Volume is: " + v + ", Surface Area is: ");
+}// end class
+  
+  

@@ -1,0 +1,16 @@
+/** lab 23
+  * oval class to extend shape class
+  */
+
+package shapes;
+
+import java.awt.*;
+
+public class Oval extends Shape{
+  
+    /** takes a graphics object and displays it based on the color, size and location */
+  public void display(Graphics g){
+    g.setColor(col);
+    g.fillOval(x, y, width, 4 * width);
+  }//end method
+  

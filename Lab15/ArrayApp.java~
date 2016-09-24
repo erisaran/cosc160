@@ -1,0 +1,21 @@
+/** lab 15
+  * app for finding a int in an array
+  */
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class ArrayApp{
+  
+  public static void main (String [] args){
+    int one = readIn("Which number do you wish to find");
+    Array first = new Array()
+    
+  }// end main
+  
+  public int readIn(String prompt){
+    Scanner sc = new Scanner(System.in);
+    System.out.println(prompt);
+    return sc.nextInt();
+  }// end scanner
+  
